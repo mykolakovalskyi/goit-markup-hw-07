@@ -34,20 +34,7 @@ ul {
 .invisible {
   display: none;
 }
-
-.header {
-  background-color: var(--background-color-1);
-  border-bottom: 1px solid #ececec;
-  padding-block: 24px;
-}
-
-.header__wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
+/* Logo */
 .logo {
   text-decoration: none;
   font-family: Raleway;
@@ -60,6 +47,20 @@ ul {
 
 .logo--color {
   color: var(--hover-and-button-color);
+}
+
+/* Header */
+.header {
+  background-color: var(--background-color-1);
+  border-bottom: 1px solid #ececec;
+  padding-block: 24px;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__logo {
@@ -140,7 +141,7 @@ ul {
 .header__contacts-icon {
   margin-right: 10px;
 }
-
+/* Section-1 */
 .section-1-box {
   background-color: var(--background-color-2);
   background: linear-gradient(#2f303a66, #2f303a66),
