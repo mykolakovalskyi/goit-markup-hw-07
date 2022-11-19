@@ -61,16 +61,16 @@
     <main>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button class="close-button" data-modal-close>
+          <button class="modal__close-button" data-modal-close>
             <svg height="10px" width="10px">
               <use href="./images/icons.svg.svg#icon-Vector"></use>
             </svg>
           </button>
           <form name="user-contact-info">
-            <h3 class="modal-title">Zostaw swoje dane w formularzu poniżej</h3>
-            <fieldset class="fieldset-standard fieldset-modal">
-              <label for="name" class="modal-label">Imie</label>
-              <svg height="18px" width="18px" class="modal-icon">
+            <h3 class="modal__title">Zostaw swoje dane w formularzu poniżej</h3>
+            <fieldset class="fieldset-standard modal__fieldset">
+              <label for="name" class="modal__label">Imie</label>
+              <svg height="18px" width="18px" class="modal__icon">
                 <use href="./images/icons.svg.svg#icon-person"></use>
               </svg>
               <input
@@ -81,9 +81,9 @@
                 required
               />
             </fieldset>
-            <fieldset class="fieldset-standard fieldset-modal">
-              <label for="phone" class="modal-label">Telefon</label>
-              <svg height="18px" width="18px" class="modal-icon">
+            <fieldset class="fieldset-standard modal__fieldset">
+              <label for="phone" class="modal__label">Telefon</label>
+              <svg height="18px" width="18px" class="modal__icon">
                 <use href="./images/icons.svg.svg#icon-phone"></use>
               </svg>
               <input
@@ -94,9 +94,9 @@
                 required
               />
             </fieldset>
-            <fieldset class="fieldset-standard fieldset-modal">
-              <label for="email" class="modal-label">Email</label>
-              <svg height="18px" width="18px" class="modal-icon">
+            <fieldset class="fieldset-standard modal__fieldset">
+              <label for="email" class="modal__label">Email</label>
+              <svg height="18px" width="18px" class="modal__icon">
                 <use href="./images/icons.svg.svg#icon-email"></use>
               </svg>
               <input
@@ -107,31 +107,33 @@
                 required
               />
             </fieldset>
-            <fieldset class="fieldset-standard fieldset-modal coment-box">
-              <label for="coment" class="modal-label">Komentarz</label>
+            <fieldset
+              class="fieldset-standard modal__fieldset modal__fieldset--coment-box"
+            >
+              <label for="coment" class="modal__label">Komentarz</label>
               <textarea
                 name="user-coment"
                 id="coment"
                 rows="6"
                 placeholder="Wprowadź tekst"
-                class="input-standard input-coment"
+                class="input-standard input--coment"
               ></textarea>
             </fieldset>
-            <label class="checkbox-label">
+            <label class="modal__checkbox-label">
               <input
                 type="checkbox"
                 name="terms-and-conditions"
                 value="terms-and-conditions"
-                class="terms-checkbox"
+                class="modal__terms-checkbox"
                 required
               />
               Oświadczam iż akceptuję <a href="#">Regulamin</a> i
               <a href="#">Politykę Prywatności</a>.
-              <svg height="15px" width="16px" class="checkbox-icon">
+              <svg height="15px" width="16px" class="modal__checkbox-icon">
                 <use href="./images/icons.svg.svg#icon-check"></use>
               </svg>
             </label>
-            <button type="submit" class="submit-modal">Wyślij</button>
+            <button type="submit" class="modal__submit">Wyślij</button>
           </form>
         </div>
       </div>
