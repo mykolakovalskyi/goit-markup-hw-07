@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container header__wrapper">
+    <header class="header-box">
+      <div class="container header">
         <a href="./index.html" class="logo header__logo"
           ><span class="logo--color">Web</span>Studio</a
         >
@@ -290,21 +290,21 @@
       </section>
     </main>
     <footer class="footer-box">
-      <div class="container footer-wrapper">
+      <div class="container footer">
         <div>
           <a href="./index.html" class="logo footer__logo"
             ><span class="logo--color">Web</span>Studio</a
           >
-          <address class="address-text address-wrapper">
+          <address class="footer__address footer__address--text">
             m. Warszawa, Aleje Jerozolimskie 21
-            <ul class="list contacts-footer-wrapper">
+            <ul class="list footer__contacts">
               <li>
-                <a href="mailto:info@devstudio.com" class="contacts-footer"
+                <a href="mailto:info@devstudio.com" class="footer__contact"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a href="tel:+48111111111" class="contacts-footer"
+                <a href="tel:+48111111111" class="footer__contact"
                   >+48 111 111 111</a
                 >
               </li>
@@ -312,48 +312,52 @@
           </address>
         </div>
         <div>
-          <h3 class="smaller-title title-footer">Dołącz do nas</h3>
-          <ul class="list our-socials">
-            <li class="social-icon-footer">
+          <h3 class="title-secondary title-secondary--footer">Dołącz do nas</h3>
+          <ul class="list footer__socials">
+            <li class="footer__social-icon">
               <svg width="44px" height="44px">
                 <use href="./images/icons.svg.svg#icon-instagram-2"></use>
               </svg>
             </li>
-            <li class="social-icon-footer">
+            <li class="footer__social-icon">
               <svg width="44px" height="44px">
                 <use href="./images/icons.svg.svg#icon-twitter-1"></use>
               </svg>
             </li>
-            <li class="social-icon-footer">
+            <li class="footer__social-icon">
               <svg width="44px" height="44px">
                 <use href="./images/icons.svg.svg#icon-facebook-1"></use>
               </svg>
             </li>
-            <li class="social-icon-footer">
+            <li class="footer__social-icon">
               <svg width="44px" height="44px">
                 <use href="./images/icons.svg.svg#icon-linkedin-1"></use>
               </svg>
             </li>
           </ul>
         </div>
-        <form name="newsletter-agreement" class="bigger-gap">
+        <form name="newsletter-agreement" class="footer__newsletter">
           <label
             for="newsletter-mail"
-            class="smaller-title title-footer footer-label"
+            class="title-secondary title-secondary--footer footer__label"
             >Zapisz się do newslettera</label
           >
-          <div class="footer-email-wrapper">
-            <fieldset class="fieldset-standard fieldset-footer">
+          <div class="footer__email">
+            <fieldset class="fieldset-standard footer__fieldset">
               <input
                 type="email"
                 name="newsletter-email"
                 placeholder="E-mail"
                 id="newsletter-mail"
-                class="input-standard input-footer"
+                class="input-standard footer__input"
               />
             </fieldset>
-            <button type="submit" class="submit-footer">
-              Zapisz się<svg width="24px" height="24px" class="send-icon">
+            <button type="submit" class="footer__submit">
+              Zapisz się<svg
+                width="24px"
+                height="24px"
+                class="footer__send-icon"
+              >
                 <use href="./images/icons.svg.svg#icon-send"></use>
               </svg>
             </button>
