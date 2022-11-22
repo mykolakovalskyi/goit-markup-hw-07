@@ -22,7 +22,7 @@
           ><span class="logo--color">Web</span>Studio</a
         >
         <nav class="header__navigation">
-          <ul class="list header__navigation-wrapper">
+          <ul class="header__navigation-wrapper">
             <li>
               <a
                 href="./index.html"
@@ -38,7 +38,7 @@
             <li><a href="#" class="header__navigation-link">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="list header__contacts-wrapper">
+        <ul class="header__contacts-wrapper">
           <li>
             <a href="mailto:info@devstudio.com" class="header__contacts"
               ><svg height="16px" width="16px" class="header__contacts-icon">
@@ -66,57 +66,57 @@
               <use href="./images/icons.svg.svg#icon-Vector"></use>
             </svg>
           </button>
+          <h3 class="modal__title">Zostaw swoje dane w formularzu poniżej</h3>
           <form name="user-contact-info">
-            <h3 class="modal__title">Zostaw swoje dane w formularzu poniżej</h3>
-            <fieldset class="fieldset-standard modal__fieldset">
-              <label for="name" class="modal__label">Imie</label>
-              <svg height="18px" width="18px" class="modal__icon">
+            <fieldset class="fieldset modal__fieldset">
+              <label for="name" class="fieldset__label">Imie</label>
+              <svg height="18px" width="18px" class="fieldset__icon">
                 <use href="./images/icons.svg.svg#icon-person"></use>
               </svg>
               <input
                 type="text"
                 name="user-name"
                 id="name"
-                class="input-standard"
+                class="fieldset__input"
                 required
               />
             </fieldset>
-            <fieldset class="fieldset-standard modal__fieldset">
-              <label for="phone" class="modal__label">Telefon</label>
-              <svg height="18px" width="18px" class="modal__icon">
+            <fieldset class="fieldset modal__fieldset">
+              <label for="phone" class="fieldset__label">Telefon</label>
+              <svg height="18px" width="18px" class="fieldset__icon">
                 <use href="./images/icons.svg.svg#icon-phone"></use>
               </svg>
               <input
                 type="tel"
                 name="user-phone"
                 id="phone"
-                class="input-standard"
+                class="fieldset__input"
                 required
               />
             </fieldset>
-            <fieldset class="fieldset-standard modal__fieldset">
-              <label for="email" class="modal__label">Email</label>
-              <svg height="18px" width="18px" class="modal__icon">
+            <fieldset class="fieldset modal__fieldset">
+              <label for="email" class="fieldset__label">Email</label>
+              <svg height="18px" width="18px" class="fieldset__icon">
                 <use href="./images/icons.svg.svg#icon-email"></use>
               </svg>
               <input
                 type="email"
                 name="user-email"
                 id="email"
-                class="input-standard"
+                class="fieldset__input"
                 required
               />
             </fieldset>
             <fieldset
-              class="fieldset-standard modal__fieldset modal__fieldset--coment-box"
+              class="fieldset modal__fieldset modal__fieldset--coment-box"
             >
-              <label for="coment" class="modal__label">Komentarz</label>
+              <label for="coment" class="fieldset__label">Komentarz</label>
               <textarea
                 name="user-coment"
                 id="coment"
                 rows="6"
                 placeholder="Wprowadź tekst"
-                class="input-standard input--coment"
+                class="fieldset__input fieldset__input--coment"
               ></textarea>
             </fieldset>
             <label class="modal__checkbox-label">
@@ -151,8 +151,8 @@
 
       <section class="section-2-box section">
         <div class="container">
-          <h2 class="invisible">LOREM IPSUM</h2>
-          <ul class="list section-2">
+          <h2 class="is-invisible">LOREM IPSUM</h2>
+          <ul class="section-2">
             <li>
               <div class="section-2__icon-box">
                 <svg height="70px" width="70px">
@@ -208,9 +208,9 @@
       <section class="section-3-box section">
         <div class="container">
           <h2 class="title-primary">Czym się zajmujemy</h2>
-          <ul class="list section-3">
+          <ul class="section-3">
             <li>
-              <div class="box">
+              <div class="section-3__overlay-box">
                 <div class="section-3__overlay">
                   <h3 class="title-secondary section-3__title">
                     Aplikacje komputerowe
@@ -226,7 +226,7 @@
               </div>
             </li>
             <li>
-              <div class="box">
+              <div class="section-3__overlay-box">
                 <div class="section-3__overlay">
                   <h3 class="title-secondary section-3__title">
                     Aplikacje mobilne
@@ -242,7 +242,7 @@
               </div>
             </li>
             <li>
-              <div class="box">
+              <div class="section-3__overlay-box">
                 <div class="section-3__overlay">
                   <h3 class="title-secondary section-3__title">
                     Rozwiązania graficzne
@@ -264,7 +264,7 @@
       <section class="section-4-box section">
         <div class="container">
           <h2 class="title-primary">Nasz zespół</h2>
-          <ul class="list section-4">
+          <ul class="section-4">
             <li class="section-4__item">
               <img
                 src="./images/4853.jpg"
@@ -274,7 +274,7 @@
               />
               <p class="section-4__name">John Doe</p>
               <p class="section-4__position">Product Designer</p>
-              <ul class="list section-4__socials">
+              <ul class="section-4__socials">
                 <li class="section-4__social-icon">
                   <svg width="44px" height="44px">
                     <use href="./images/icons.svg.svg#icon-instagram-2"></use>
@@ -307,7 +307,7 @@
               />
               <p class="section-4__name">John Doe</p>
               <p class="section-4__position">Frontend Developer</p>
-              <ul class="list section-4__socials">
+              <ul class="section-4__socials">
                 <li class="section-4__social-icon">
                   <svg width="44px" height="44px">
                     <use href="./images/icons.svg.svg#icon-instagram-2"></use>
@@ -340,7 +340,7 @@
               />
               <p class="section-4__name">John Doe</p>
               <p class="section-4__position">Marketing</p>
-              <ul class="list section-4__socials">
+              <ul class="section-4__socials">
                 <li class="section-4__social-icon">
                   <svg width="44px" height="44px">
                     <use href="./images/icons.svg.svg#icon-instagram-2"></use>
@@ -373,7 +373,7 @@
               />
               <p class="section-4__name">John Doe</p>
               <p class="section-4__position">UI Designer</p>
-              <ul class="list section-4__socials">
+              <ul class="section-4__socials">
                 <li class="section-4__social-icon">
                   <svg width="44px" height="44px">
                     <use href="./images/icons.svg.svg#icon-instagram-2"></use>
@@ -403,7 +403,7 @@
       <section class="section-5-box section">
         <div class="container">
           <h2 class="title-primary">Nasi klienci</h2>
-          <ul class="list section-5">
+          <ul class="section-5">
             <li>
               <svg width="170px" height="92px" class="section-5__client">
                 <use href="./images/icons.svg.svg#icon-Client-1"></use>
@@ -446,7 +446,7 @@
           >
           <address class="footer__address footer__address--text">
             m. Warszawa, Aleje Jerozolimskie 21
-            <ul class="list footer__contacts">
+            <ul class="footer__contacts">
               <li>
                 <a href="mailto:info@devstudio.com" class="footer__contact"
                   >info@devstudio.com</a
@@ -462,7 +462,7 @@
         </div>
         <div>
           <h3 class="title-secondary title-secondary--footer">Dołącz do nas</h3>
-          <ul class="list footer__socials">
+          <ul class="footer__socials">
             <li class="footer__social-icon">
               <svg width="44px" height="44px">
                 <use href="./images/icons.svg.svg#icon-instagram-2"></use>
@@ -492,13 +492,13 @@
             >Zapisz się do newslettera</label
           >
           <div class="footer__email">
-            <fieldset class="fieldset-standard footer__fieldset">
+            <fieldset class="fieldset footer__fieldset">
               <input
                 type="email"
                 name="newsletter-email"
                 placeholder="E-mail"
                 id="newsletter-mail"
-                class="input-standard footer__input"
+                class="fieldset__input footer__input"
               />
             </fieldset>
             <button type="submit" class="footer__submit">
