@@ -382,6 +382,16 @@ ul {
   background-size: cover;
 }
 
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 696px;
+  align-items: center;
+  padding-block: 200px;
+  padding-left: auto;
+  padding-right: auto;
+}
+
 .section-1-box--position {
   margin: 0 auto;
 }
@@ -420,16 +430,6 @@ ul {
   background-color: var(--hover-and-button-color);
   color: var(--text-color-2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.section-1 {
-  display: flex;
-  flex-direction: column;
-  max-width: 696px;
-  align-items: center;
-  padding-block: 200px;
-  padding-left: auto;
-  padding-right: auto;
 }
 
 /* Section-2 */
