@@ -1,4 +1,8 @@
 @import "utils/variables";
+@import "utils/normalize";
+@import "utils/is-invisible";
+@import "utils/is-hidden";
+@import "utils/is-block";
 @import "components/container";
 @import "components/section";
 @import "components/title-primary";
