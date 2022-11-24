@@ -22,7 +22,7 @@
           ><span class="logo--color">Web</span>Studio</a
         >
         <nav class="header__navigation">
-          <ul class="header__navigation-wrapper">
+          <ul class="header__navigation-list">
             <li>
               <a
                 href="./index.html"
@@ -38,7 +38,7 @@
             <li><a href="#" class="header__navigation-link">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="header__contacts-wrapper">
+        <ul class="header__contacts-list">
           <li>
             <a href="mailto:info@devstudio.com" class="header__contacts"
               ><svg height="16px" width="16px" class="header__contacts-icon">
@@ -138,18 +138,20 @@
         </div>
       </div>
 
-      <section class="section-1-box section-1-box--position">
-        <div class="container section-1">
-          <h1 class="section-1__header">
-            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-          </h1>
-          <button type="button" class="section-1__button" data-modal-open>
-            Zamów usługe
-          </button>
+      <section class="background-image background-image--position">
+        <div class="container container--centered">
+          <div class="section-1">
+            <h1 class="section-1__header">
+              EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+            </h1>
+            <button type="button" class="section-1__button" data-modal-open>
+              Zamów usługe
+            </button>
+          </div>
         </div>
       </section>
 
-      <section class="section-2-box section">
+      <section class="section section--background-white">
         <div class="container">
           <h2 class="is-invisible">LOREM IPSUM</h2>
           <ul class="section-2">
@@ -205,7 +207,7 @@
         </div>
       </section>
 
-      <section class="section-3-box section">
+      <section class="section section--background-white">
         <div class="container">
           <h2 class="title-primary">Czym się zajmujemy</h2>
           <ul class="section-3">
@@ -217,7 +219,7 @@
                   </h3>
                 </div>
                 <img
-                  class="img-block"
+                  class="is-block"
                   src="./images/close-up-image-programer-working-his-desk-office_1098-18707.jpg"
                   alt="Programista pracujący przy biurku w biurze"
                   width="370"
@@ -233,7 +235,7 @@
                   </h3>
                 </div>
                 <img
-                  class="img-block"
+                  class="is-block"
                   src="./images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg"
                   alt="Projektanci interfejsów internetowych tworzą aplikacje na smartfony, nad interfejsem telefonów komórkowych pracuje zespół twórców"
                   width="370"
@@ -249,7 +251,7 @@
                   </h3>
                 </div>
                 <img
-                  class="img-block"
+                  class="is-block"
                   src="./images/creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg"
                   alt="Kreatywny projektant stron internetowych z działającym tabletem graficznym z próbnikiem kolorów"
                   width="370"
@@ -261,7 +263,7 @@
         </div>
       </section>
 
-      <section class="section-4-box section">
+      <section class="section section--background-grey">
         <div class="container">
           <h2 class="title-primary">Nasz zespół</h2>
           <ul class="section-4">
@@ -400,7 +402,7 @@
         </div>
       </section>
 
-      <section class="section-5-box section">
+      <section class="section section--background-white">
         <div class="container">
           <h2 class="title-primary">Nasi klienci</h2>
           <ul class="section-5">
@@ -438,80 +440,84 @@
         </div>
       </section>
     </main>
-    <footer class="footer-box">
-      <div class="container footer">
-        <div>
-          <a href="./index.html" class="logo footer__logo"
-            ><span class="logo--color">Web</span>Studio</a
-          >
-          <address class="footer__address footer__address--text">
-            m. Warszawa, Aleje Jerozolimskie 21
-            <ul class="footer__contacts">
-              <li>
-                <a href="mailto:info@devstudio.com" class="footer__contact"
-                  >info@devstudio.com</a
-                >
+    <footer class="footer-background">
+      <div class="container">
+        <div class="footer">
+          <div>
+            <a href="./index.html" class="logo footer__logo"
+              ><span class="logo--color">Web</span>Studio</a
+            >
+            <address class="footer__address footer__address--text">
+              m. Warszawa, Aleje Jerozolimskie 21
+              <ul class="footer__contacts">
+                <li>
+                  <a href="mailto:info@devstudio.com" class="footer__contact"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+48111111111" class="footer__contact"
+                    >+48 111 111 111</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div>
+            <h3 class="title-secondary title-secondary--footer">
+              Dołącz do nas
+            </h3>
+            <ul class="footer__socials">
+              <li class="footer__social-icon">
+                <svg width="44px" height="44px">
+                  <use href="./images/icons.svg.svg#icon-instagram-2"></use>
+                </svg>
               </li>
-              <li>
-                <a href="tel:+48111111111" class="footer__contact"
-                  >+48 111 111 111</a
-                >
+              <li class="footer__social-icon">
+                <svg width="44px" height="44px">
+                  <use href="./images/icons.svg.svg#icon-twitter-1"></use>
+                </svg>
+              </li>
+              <li class="footer__social-icon">
+                <svg width="44px" height="44px">
+                  <use href="./images/icons.svg.svg#icon-facebook-1"></use>
+                </svg>
+              </li>
+              <li class="footer__social-icon">
+                <svg width="44px" height="44px">
+                  <use href="./images/icons.svg.svg#icon-linkedin-1"></use>
+                </svg>
               </li>
             </ul>
-          </address>
-        </div>
-        <div>
-          <h3 class="title-secondary title-secondary--footer">Dołącz do nas</h3>
-          <ul class="footer__socials">
-            <li class="footer__social-icon">
-              <svg width="44px" height="44px">
-                <use href="./images/icons.svg.svg#icon-instagram-2"></use>
-              </svg>
-            </li>
-            <li class="footer__social-icon">
-              <svg width="44px" height="44px">
-                <use href="./images/icons.svg.svg#icon-twitter-1"></use>
-              </svg>
-            </li>
-            <li class="footer__social-icon">
-              <svg width="44px" height="44px">
-                <use href="./images/icons.svg.svg#icon-facebook-1"></use>
-              </svg>
-            </li>
-            <li class="footer__social-icon">
-              <svg width="44px" height="44px">
-                <use href="./images/icons.svg.svg#icon-linkedin-1"></use>
-              </svg>
-            </li>
-          </ul>
-        </div>
-        <form name="newsletter-agreement" class="footer__newsletter">
-          <label
-            for="newsletter-mail"
-            class="title-secondary title-secondary--footer footer__label"
-            >Zapisz się do newslettera</label
-          >
-          <div class="footer__email">
-            <fieldset class="fieldset footer__fieldset">
-              <input
-                type="email"
-                name="newsletter-email"
-                placeholder="E-mail"
-                id="newsletter-mail"
-                class="fieldset__input footer__input"
-              />
-            </fieldset>
-            <button type="submit" class="footer__submit">
-              Zapisz się<svg
-                width="24px"
-                height="24px"
-                class="footer__send-icon"
-              >
-                <use href="./images/icons.svg.svg#icon-send"></use>
-              </svg>
-            </button>
           </div>
-        </form>
+          <form name="newsletter-agreement" class="footer__newsletter">
+            <label
+              for="newsletter-mail"
+              class="title-secondary title-secondary--footer footer__label"
+              >Zapisz się do newslettera</label
+            >
+            <div class="footer__email">
+              <fieldset class="fieldset footer__fieldset">
+                <input
+                  type="email"
+                  name="newsletter-email"
+                  placeholder="E-mail"
+                  id="newsletter-mail"
+                  class="fieldset__input footer__input"
+                />
+              </fieldset>
+              <button type="submit" class="footer__submit">
+                Zapisz się<svg
+                  width="24px"
+                  height="24px"
+                  class="footer__send-icon"
+                >
+                  <use href="./images/icons.svg.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>

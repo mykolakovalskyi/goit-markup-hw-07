@@ -37,7 +37,7 @@ ul {
   pointer-events: none;
 }
 
-.img-block {
+.is-block {
   display: block;
 }
 /* backdrop */
@@ -52,7 +52,7 @@ ul {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
 }
-
+/* container */
 .container {
   box-sizing: border-box;
   max-width: 1200px;
@@ -61,10 +61,23 @@ ul {
   padding: 0 15px;
 }
 
+.container--centered {
+  display: flex;
+  justify-content: center;
+}
+/* section */
 .section {
   padding-block: 94px;
 }
 
+.section--background-white {
+  background-color: var(--background-color-1);
+}
+
+.section--background-grey {
+  background-color: var(--background-color-3);
+}
+/* title-primary */
 .title-primary {
   font-size: 36px;
   line-height: 100%;
@@ -72,7 +85,7 @@ ul {
   text-align: center;
   margin-bottom: 50px;
 }
-
+/* title-secondary */
 .title-secondary {
   font-size: 14px;
   line-height: 100%;
@@ -183,7 +196,7 @@ ul {
   flex-grow: 1;
 }
 
-.header__navigation-wrapper {
+.header__navigation-list {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -241,7 +254,7 @@ ul {
   fill: var(--hover-and-button-color);
 }
 
-.header__contacts-wrapper {
+.header__contacts-list {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -369,9 +382,8 @@ ul {
   color: var(--text-color-2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-/* Section-1 */
-.section-1-box {
+/*  */
+.background-image {
   background-color: var(--background-color-2);
   background: linear-gradient(#2f303a66, #2f303a66),
     url(../images/new_photo.jpg);
@@ -379,6 +391,11 @@ ul {
   background-position: 50% 35%;
   background-size: cover;
 }
+
+.background-image--position {
+  margin: 0 auto;
+}
+/* Section-1 */
 
 .section-1 {
   display: flex;
@@ -390,9 +407,6 @@ ul {
   padding-right: auto;
 }
 
-.section-1-box--position {
-  margin: 0 auto;
-}
 
 .section-1__header {
   color: var(--text-color-2);
@@ -431,9 +445,6 @@ ul {
 }
 
 /* Section-2 */
-.section-2-box {
-  background-color: var(--background-color-1);
-}
 
 .section-2 {
   display: flex;
@@ -460,9 +471,6 @@ ul {
   text-align: left;
 }
 /* Section-3 */
-.section-3-box {
-  background-color: var(--background-color-1);
-}
 
 .section-3 {
   display: flex;
@@ -496,9 +504,6 @@ ul {
 }
 
 /* Section-4 */
-.section-4-box {
-  background-color: var(--background-color-3);
-}
 
 .section-4 {
   display: flex;
@@ -558,9 +563,6 @@ ul {
 }
 
 /* Section-5 */
-.section-5-box {
-  background-color: var(--background-color-1);
-}
 
 .section-5 {
   display: flex;
@@ -582,11 +584,11 @@ ul {
   border-color: var(--hover-and-button-color);
 }
 
-/* Footer */
-.footer-box {
+/* footer-background */
+.footer-background {
   background-color: var(--background-color-2);
 }
-
+/* Footer */
 .footer {
   display: flex;
   gap: 70px;
