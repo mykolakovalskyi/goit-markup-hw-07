@@ -94,7 +94,7 @@ ul {
   margin-bottom: 10px;
 }
 
-.title-secondary--footer {
+.title-secondary--white {
   color: var(--text-color-2);
   text-transform: uppercase;
   padding-top: 12px;
@@ -111,7 +111,7 @@ ul {
   text-align: left;
 }
 
-.logo--color {
+.logo--blue {
   color: var(--hover-and-button-color);
 }
 
@@ -839,7 +839,7 @@ ul {
   transform: translateY(0);
 }
 
-.portfolio__overlay--text {
+.portfolio__overlay-text {
   color: var(--text-color-2);
   padding-left: 24px;
   padding-right: 45px;
