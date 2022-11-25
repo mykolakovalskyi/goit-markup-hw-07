@@ -1,4 +1,4 @@
-.section-1 {
+.banner {
   display: flex;
   flex-direction: column;
   max-width: 696px;
@@ -17,7 +17,7 @@
   }
 }
 
-.section-1__button {
+.banner__button {
   background-color: var(--background-color-3);
   font-family: inherit;
   color: inherit;

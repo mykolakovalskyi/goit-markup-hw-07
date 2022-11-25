@@ -1,4 +1,4 @@
-.section-4 {
+.team-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -39,7 +39,7 @@
     list-style: none;
   }
 }
-.section-4__social-icon {
+.team-list__social-icon {
   background-color: var(--background-color-1);
   border-radius: 50%;
   max-width: 44px;
